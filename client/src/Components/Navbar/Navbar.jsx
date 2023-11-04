@@ -1,31 +1,13 @@
-import { Link } from "react-router-dom";
-const Navbar = () => {
+import React from "react";
+import Logo from "../Logo/Logo";
+import style from "./Navbar.module.css";
+import Button from "../Button/Button";
+
+export default function Navbar() {
   return (
-    <div
-      style={{
-        height: "75px",
-        backgroundColor: "gray",
-      }}
-    >
-      <div className="button-container">
-        <Link to={"home"}>
-          <button className="nav-button">Home</button>
-        </Link>
-
-        <Link to={"/form"}>
-          <button className="nav-button">Create</button>
-        </Link>
-
-        <Link to={"/about"}>
-          <button className="nav-button">About</button>
-        </Link>
-
-        <Link to={"/"}>
-          <button className="nav-button">Exit</button>
-        </Link>
-      </div>
+    <div className={style.Navbar}>
+      <Logo></Logo>
+      <Button>Crear</Button>
     </div>
   );
-};
-
-export default Navbar;
+}

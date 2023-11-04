@@ -1,9 +1,26 @@
-.content {
+.layout {
   display: flex;
+  padding: var(--spacing-xl);
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  gap: var(--spacing-xl);
+  flex: 1;
 }
 
-.image {}
+.landingCard {
+  border-radius: 36px;
+  background-color: var(--bg-color);
+  display: flex;
+  padding: 36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xl);
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.titleBold {
+  font-weight: 900;
+}

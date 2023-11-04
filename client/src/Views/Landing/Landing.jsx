@@ -1,22 +1,18 @@
-// import React from "react";
+import Button from "../../Components/Button/Button";
+import styles from "./Landing.module.css";
 import { useNavigate } from "react-router-dom";
-import backgroundImage from "../Landing/drivers.jpeg";
-import style from "../Landing/Landing.module.css";
 
-const Landing = () => {
+export default function Landing() {
   const navigate = useNavigate();
   return (
-    <div className="landing-page">
-      <div className={style.content}>
-        <h1 className={style.title}>Bienvenido a mi aplicación</h1>
-        <button onClick={() => navigate("/app/home")}>Ingresar</button>
+    <div className={styles.layout}>
+      <div className={styles.landingCard}>
+        <h1>
+          Bienvenido a mi aplicación de{" "}
+          <span className={styles.titleBold}>Drivers</span>
+        </h1>
+        <Button onClick={() => navigate("/app/home")}>Entrar</Button>
       </div>
-      <img
-        src={backgroundImage}
-        alt=" Background "
-        className="background-image"
-      />
     </div>
   );
-};
-export default Landing;
+}

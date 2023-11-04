@@ -1,0 +1,12 @@
+.button {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 16px;
+  padding: var(--spacing-xs);
+  background-color: var(--primary);
+  border: none;
+}

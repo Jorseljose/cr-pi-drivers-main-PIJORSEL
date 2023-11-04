@@ -1,0 +1,13 @@
+.Filter {
+  display: flex;
+  width: 1368px;
+  height: 75px;
+  padding: 16px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 36px;
+  background: rgba(0, 0, 0, 0.72);
+  color: rgba(235, 255, 215, 1);
+  background-color: rgba(0, 0, 0, 0.72);
+}
