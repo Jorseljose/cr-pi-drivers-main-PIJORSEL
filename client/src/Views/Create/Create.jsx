@@ -1,5 +1,15 @@
-const Create = () => {
-  return <div>Create</div>;
+import style from "../Create/Create.module.css";
+
+const Create = ({
+  image,
+  name,
+  lasName,
+  nationality,
+  description,
+  birthDate,
+  teams,
+}) => {
+  return <div></div>;
 };
 
 export default Create;

@@ -1,14 +1,15 @@
 import Search from "../Search/Search";
+import Select from "../Select/Select";
 import style from "./Filter.module.css";
 
 export default function Filter() {
   return (
     <div className={style.Filter}>
       <Search />
-      <div>Filtrar por equipo</div>
-      <div>Filtrar por Origen</div>
-      <div>Ordenar Alfabeticamente</div>
-      <div>Ordenar por Fechas</div>
+      <Select placeholder="Filtrar por equipo" />
+      <Select placeholder="Filtrar por Origen" />
+      <Select placeholder="Ordenar Alfabeticamente" />
+      <Select placeholder="Ordenar por Fechas" />
     </div>
   );
 }
