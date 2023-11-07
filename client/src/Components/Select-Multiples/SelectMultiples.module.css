@@ -1,16 +1,19 @@
 .Select {
   display: flex;
   padding: 0px 16px;
-  align-items: center;
   gap: 10px;
   flex: 1 0 0;
   align-self: stretch;
 
-  border-radius: 100px;
-  border: 2px solid #ebffd7;
+  flex-direction: column;
 }
 
-.input {
+.label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
   background-color: transparent;
   border: none;
   color: #ebffd7;
@@ -21,18 +24,16 @@
   font-weight: 500;
   line-height: normal;
   flex: 1;
+
+  border: 2px solid white;
+  border-radius: 36px;
+
+  padding: 16px;
 }
 
-.input::placeholder {
-  color: #ebffd7;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.input:focus-visible {
+.input {
   border: none;
-  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: white;
 }
